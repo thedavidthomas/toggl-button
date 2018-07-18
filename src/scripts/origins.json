@@ -1,4 +1,9 @@
 {
+  "admation.com": {
+    "url": "*://www.admation.com/*",
+    "name": "Admation",
+    "file": "admation.js"
+  },
   "agenocrm.com": {
     "url": "*://*.agenocrm.com/*",
     "name": "AgenoCRM",
