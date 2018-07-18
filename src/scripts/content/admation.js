@@ -4,15 +4,18 @@
 
 togglbutton.render('#chunkDetailsPanel > div:not(.toggl)', {observe: true}, function () {
   var link,
+    container = $('#chunkDetailsPanel > div'),
+    wrap = createTag('div', 'unibutton admation-ab-wrapper'),
     description = $('#chunkDetailsPanel > div > div').textContent.trim(),
     project = $('#chunkDetailsPanel > div > div + div + div').textContent.trim();
 
 
   link = togglbutton.createTimerLink({
-    className: 'zube',
+    className: 'admation',
     description: description,
     projectName: project
   });
-
-  $('#chunkDetailsPanel').appendChild(link);
+  wrap.appendChild(link);
+  container.prepend(wrap);
+  // $('#chunkDetailsPanel > div').prepend(link);
 });
