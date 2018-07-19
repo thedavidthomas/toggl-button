@@ -7,7 +7,7 @@ togglbutton.render('#chunkDetailsPanel > div:not(.toggl)', {observe: true}, func
     container = $('#chunkDetailsPanel > div'),
     wrap = createTag('div', 'unibutton admation-ab-wrapper'),
     description = $('#chunkDetailsPanel > div > div').textContent.trim(),
-    project = $('#chunkDetailsPanel > div > div + div + div').textContent.trim();
+    project = $('#chunkDetailsPanel > div > div + div + div').textContent.trim().substring(0, 12);
 
 
   link = togglbutton.createTimerLink({
